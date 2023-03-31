@@ -1,0 +1,164 @@
+<main className="bg-gray-100 min-h-screen w-screen">
+  <main className="max-w-screen-2xl m-auto bg-white">
+    {/* NAVBAR */}
+    <nav className="bg-white p-2 flex justify-between">
+      <a href="/" className="font-bold text-gray-700 text-2xl"> OpenTable </a>
+      <div>
+        <div className="flex">
+          <button
+            className="bg-blue-400 text-white border rounded-lg mr-4 px-4 py-1"
+          >
+            Signin
+          </button>
+          <button className="border rounded-lg mr-2 px-4 py-1">Signup</button>
+        </div>
+      </div>
+    </nav>
+    {/* HEADER */}
+    <div className="h-96 overflow-hidden">
+      <div
+        className="bg-center bg-gradient-to-r from-[#0f1f47] to-[#5f6984] bg-[url('https://resizer.otstatic.com/v2/photos/wide-huge/2/26519987.png')] h-full flex justify-center items-center"
+      >
+        <h1 className="text-7xl text-white capitalize text-shadow text-center">
+          Char Bar @ Four Seasons Hotel Cairo
+        </h1>
+      </div>
+    </div>
+    {/* DESCRIPTION */}
+    <div className="flex m-auto w-2/3 justify-between items-start 0 -mt-11">
+      <div className="bg-white w-[70%] rounded p-3 shadow">
+        {/* NAVBAR */}
+        <nav className="flex text-reg border-b pb-2">
+          <a href="#" className="mr-7"> Overview </a>
+          <a href="#" className="mr-7"> Menu </a>
+        </nav>
+        {/* TITLE */}
+        <div className="mt-4 border-b pb-6">
+          <h1 className="font-bold text-6xl">Char Bar</h1>
+        </div>
+        {/* RATINGS */}
+        <div className="flex items-center mt-2">
+          <div className="ratings flex items-center">
+            <p>*****</p>
+            <p className="text-reg ml-3">4.9</p>
+          </div>
+          <div>
+            <p className="text-reg ml-4">600 Reviews</p>
+          </div>
+        </div>
+        {/* Notes */}
+        <div className="mt-4">
+          <p className="text-reg font-light leading-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+            ipsum corrupti, dolorem, minima, asperiores id molestias aliquam
+            rerum eaque ad nam quidem! Officia quas, adipisci quibusdam,
+            incidunt corrupti maxime voluptatibus error libero vitae rem quidem
+            nisi consequuntur explicabo hic vero iure. Aut, provident voluptate
+            fugit nobis iure rerum tenetur accusantium.
+          </p>
+        </div>
+        {/* IMAGES */}
+        <div>
+          <h1 className="font-bold text-3xl mt-10 mb-7 border-b pb-5">
+            5 Photos
+          </h1>
+          <div className="grid gap-4 grid-cols-4 grid-rows-2 overflow-hidden">
+            <img
+              className="row-span-2 col-span-2 w-full h-full mr-1 mb-1 rounded"
+              src="https://resizer.otstatic.com/v2/photos/xlarge/2/26519989.png"
+              alt="hot dog 1"
+            />
+            <img
+              className="row-span-1 col-span-1 w-full h-full mr-1 mb-1 rounded"
+              src="https://resizer.otstatic.com/v2/photos/xlarge/2/26519989.png"
+              alt="hot dog 1"
+            />
+            <img
+              className="row-span-1 col-span-1 w-full h-full mr-1 mb-1 rounded"
+              src="https://resizer.otstatic.com/v2/photos/xlarge/2/26519989.png"
+              alt="hot dog 1"
+            />
+            <img
+              className="row-span-1 col-span-1 w-full h-full mr-1 mb-1 rounded"
+              src="https://resizer.otstatic.com/v2/photos/xlarge/2/26519989.png"
+              alt="hot dog 1"
+            />
+            <img
+              className="row-span-1 col-span-1 w-full h-full mr-1 mb-1 rounded"
+              src="https://resizer.otstatic.com/v2/photos/xlarge/2/26519989.png"
+              alt="hot dog 1"
+            />
+          </div>
+        </div>
+        {/* REVIEWS */}
+        <div>
+          <h1 className="font-bold text-3xl mt-10 mb-7 border-b pb-5">
+            What 14 people are saying about it
+          </h1>
+          <div>
+            {/* REVIEW CARD */}
+            <div className="border-b pb-7 mb-7">
+              <div className="flex">
+                <div className="w-[25%] flex flex-col items-center">
+                  <div
+                    className="rounded-full bg-blue-400 w-16 h-16 flex items-center justify-center"
+                  >
+                    <h2 className="text-white text-2xl">MJ</h2>
+                  </div>
+                  <p className="text-sm text-center">Michecl Jordan</p>
+                </div>
+                <div className="ml-10 w-[75%]">
+                  <div className="flex items-center">
+                    <div className="flext mr-5">*****</div>
+                  </div>
+                  <div className="mt-5">
+                    <p className="text-reg text-light font-light">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fuga ex sed illo modi distinctio explicabo vel alias est
+                      reprehenderit quod.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* RESERVATION CARD */}
+      <div className="w-[27%] relative text-reg">
+        <div className="fixed w-[15%] bg-white rounded p-3 shadow">
+          <div className="text-center border-b pb-2 font-bold">
+            <h4 className="mr-7 text-lg">Make a Reservation</h4>
+          </div>
+          <div className="my-3 flex flex-col">
+            <label htmlFor="">Party size</label>
+            <select name="" className="py-3 border-b font-light" id="">
+              <option value="">1 person</option>
+              <option value="">2 people</option>
+            </select>
+          </div>
+          <div className="flex justify-between">
+            <div className="flex flex-col w-[48%]">
+              <label htmlFor="">Date</label>
+              <input type="text" className="py-3 border-b font-light w-28" />
+            </div>
+            <div className="flex flex-col w-[48%]">
+              <label htmlFor="">Time</label>
+              <select name="" id="" className="py-3 border-b font-light">
+                <option value="">7:30 AM</option>
+                <option value="">9:30 AM</option>
+              </select>
+            </div>
+          </div>
+          <div className="mt-5">
+            <button
+              className="bg-red-600 rounded w-full px-4 text-white font-bold h-16"
+            >
+              Find a Time
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</main>
